@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - DealSphere</title>
+    <link rel="stylesheet" href="assets/css/style.css"> <!-- Linking CSS -->
+    <style>
+        /* Centering the login box */
+        .login-wrapper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--cultured); /* Matches your website background */
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: var(--border-radius-md);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 350px;
+        }
+
+        .login-title {
+            margin-bottom: 20px;
+            font-size: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+            text-align: left;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-size: 1rem;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid var(--cultured);
+            border-radius: var(--border-radius-sm);
+            font-size: 1rem;
+        }
+
+        .banner-btn {
+            width: 100%;
+            padding: 10px;
+            background: var(--primary-color, #ff4c3b);
+            color: white;
+            border: none;
+            border-radius: var(--border-radius-sm);
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .banner-btn:hover {
+            background: #e04335;
+        }
+
+        .register-link {
+            margin-top: 10px;
+            font-size: 0.9rem;
+        }
+
+        .register-link a {
+            color: var(--primary-color, #ff4c3b);
+            text-decoration: none;
+        }
+
+        .register-link a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="login-wrapper">
+        <div class="login-box">
+            <h2 class="login-title">Login to DealSphere</h2>
+            
+            <form action="index.html" method="GET">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+
+                <button type="submit" class="banner-btn">Login</button>
+
+                <p class="register-link">Don't have an account? <a href="register.html">Sign up</a></p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
